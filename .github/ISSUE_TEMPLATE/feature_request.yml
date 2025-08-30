@@ -1,0 +1,45 @@
+name: "✨ Feature Request"
+description: "Suggest a new feature, enhancement, or improvement for pubx.dev."
+title: "[FEATURE] A short, descriptive title"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for helping us improve pubx.dev!**
+        Please share as much detail as possible about your idea so we can understand and consider your suggestion.
+  - type: input
+    id: summary
+    attributes:
+      label: "Feature summary"
+      description: "Briefly describe your idea in one sentence."
+      placeholder: "Example: Allow sorting package search results by health score"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Describe your feature"
+      description: "What would you like to see? How would it work? What problem would it solve?"
+      placeholder: |-
+        Example:
+        - Add an option to sort search results by health score.
+        - This would help users find the most reliable packages faster.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: "Why is this feature useful?"
+      description: "Explain how this feature would help you or others. What’s the value?"
+      placeholder: |-
+        Example:
+        - Saves time evaluating packages.
+        - Makes it easier for new developers to choose safe packages.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context or examples (optional)"
+      description: "Add any links, screenshots, or context that might help us understand your request."

@@ -1,0 +1,29 @@
+name: "Welcome New Issues and Remind on Incomplete Info"
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+            if (body.length < 30) {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `Hi @${context.payload.issue.user.login}, thanks for your issue! It looks like your description may be a bit short. Please provide as much detail as possible to help us help you faster. 😊`
+              });
+            } else {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `Hi @${context.payload.issue.user.login}, welcome to pubx.dev support! We'll review your issue and respond soon. Thank you! 🚀`
+              });
+            }
