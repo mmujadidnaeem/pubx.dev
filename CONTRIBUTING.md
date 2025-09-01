@@ -1,10 +1,39 @@
+# Contributing to PubX.dev
 
-# Contributing to pubx.dev
+Thank you for your interest in PubX.dev!
 
-Thank you for your interest in contributing to pubx.dev.
+## Code Contributions
 
-At this time, we are not accepting external contributions to this repository.
+**We are not currently accepting code contributions or pull requests** for this project. This repository serves as a support and feedback portal for the PubX.dev platform.
 
-If you have feedback, want to report a bug, or request a feature, please use the Issues section.
+## How You Can Help
 
-We appreciate your support and understanding!
+While we're not accepting code contributions, you can still help improve PubX.dev by:
+
+### 🐞 Reporting Bugs
+
+Found a bug? Please [open a bug report issue](../../issues/new?template=bug_report.yml) with detailed information.
+
+### ✨ Suggesting Features
+
+Have an idea for a new feature? Please [submit a feature request](../../issues/new?template=feature_request.yml).
+
+### ❓ Getting Support
+
+Need help or have questions? Please [ask a question](../../issues/new?template=question.yml) or check our [Support Guide](./SUPPORT.md).
+
+## Guidelines
+
+Before submitting an issue:
+
+- Search existing issues to avoid duplicates
+- Read our [FAQ](./FAQ.md) for common questions
+- Follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+
+## Contact
+
+For urgent or sensitive matters, reach us at: support@pubx.dev
+
+---
+
+Thank you for helping make PubX.dev better for everyone!
